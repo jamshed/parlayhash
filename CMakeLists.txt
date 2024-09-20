@@ -51,7 +51,7 @@ else()
   target_link_libraries(parlay INTERFACE optimized ${JEMALLOC_LIB})
 endif()
 
-add_subdirectory(benchmarks)
+#add_subdirectory(benchmarks)
 
 add_subdirectory(examples)
 
