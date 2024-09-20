@@ -5,3 +5,7 @@ target_include_directories(example PRIVATE ${PARLAYHASH_SOURCE_DIR}/include/parl
 add_executable(upsert_example upsert_example.cpp)
 target_link_libraries(upsert_example PRIVATE parlay)
 target_include_directories(upsert_example PRIVATE ${PARLAYHASH_SOURCE_DIR}/include/parlay_hash/)
+
+add_executable(interplay interplay.cpp)
+target_link_libraries(interplay PRIVATE parlay)
+target_include_directories(interplay PRIVATE ${PARLAYHASH_SOURCE_DIR}/include/parlay_hash/)
