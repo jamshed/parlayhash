@@ -135,6 +135,12 @@ namespace parlay {
       return m.Remove(Entry::make_key(k), g);
     }
 
+    template <typename F>
+    auto for_each(const F& f)
+    {
+      m.for_each(f);
+    }
+
     iterator find(const K& k) { return m.find(k); }
 
     std::pair<iterator,bool> insert(const value_type& entry) {
